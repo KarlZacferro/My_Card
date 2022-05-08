@@ -12,14 +12,14 @@ class MeuApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
     home: Scaffold(
-      backgroundColor: Color.fromARGB(255, 46, 46, 46),
+      backgroundColor: Color.fromARGB(255, 29, 29, 29),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 50.0,
-              backgroundImage:AssetImage('imagens/Pic.jpeg'),
+              backgroundImage:AssetImage('images/Pic.jpeg'),
             ),
             Text(
               'Karlisson Ferreira',
@@ -30,7 +30,7 @@ class MeuApp extends StatelessWidget{
             ),
             Text(
               'My first app in Flutter',
-              style: TextStyle(color: Colors.grey.shade900,
+              style: TextStyle(color: Color.fromARGB(255, 119, 111, 111),
               fontSize:15 
               ),
             ),
@@ -48,8 +48,32 @@ class MeuApp extends StatelessWidget{
                   Icons.phone,
                   color: Colors.black,
                 ),
-                title: Text('40028922',
-                style: TextStyle(fontSize: 10),
+                title: Text(   '4002-8922',
+                style: TextStyle(fontSize: 20),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.black,
+                ),
+                title: Text(   'MrstBread@gmail.com',
+                style: TextStyle(fontSize: 17),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.search,
+                  color: Colors.black,
+                ),
+                title: Text(   '@Van_Droge',
+                style: TextStyle(fontSize: 18),
                 ),
               ),
             )
